@@ -14,7 +14,7 @@ class GenerateConfiguration(Form):
 
     # Load configurations from these files
     for file in os.listdir(modules_folder):
-        if file.endswith(".json"):
+        if file.endswith("requirements.json"):
             with open(os.path.join(modules_folder, file)) as data_file:
                 configurations[file] = json.load(data_file)
 
@@ -24,7 +24,7 @@ class GenerateConfiguration(Form):
         # Module Enable button
         exec(friendlyModuleName + "_Enabled" + " = BooleanField('Enable " +
             friendlyModuleName +"')")
-
+            
         for field in configuration["params"]:
             friendlyFieldName = field["name"].replace(" ", "_")
 
