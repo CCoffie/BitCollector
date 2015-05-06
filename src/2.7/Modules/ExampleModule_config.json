@@ -1,0 +1,7 @@
+{
+    "logging_level_Radio_field": "1", 
+    "logging_level_select_field": "3", 
+    "TextBox": "Cool string", 
+    "Enabled": true, 
+    "Check_box": true
+}

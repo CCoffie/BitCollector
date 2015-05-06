@@ -1,0 +1,53 @@
+{
+    "params": [
+        {
+            "name": "Check box",
+            "description": "This is a cool checkbox",
+            "fieldType": "BooleanField"
+        },
+        {
+            "name": "TextBox",
+            "description": "This is a cool textbox",
+            "fieldType": "StringField",
+            "required": "True"
+        },
+        {
+            "name": "logging level Radio field",
+            "description": "This is used to override the logging level provided by the framework. Leave this blank to not override and use the logging level specified by the framework.",
+            "fieldType": "RadioField",
+            "options": [
+                [
+                    "1", "debug"
+                ],
+                [
+                    "2", "info"
+                ],
+                [
+                    "3", "warning"
+                ],
+                [
+                    "4", "error"
+                ]
+            ]
+        },
+        {
+            "name": "logging level select field",
+            "description": "This is used to override the logging level provided by the framework. Leave this blank to not override and use the logging level specified by the framework.",
+            "fieldType": "SelectField",
+            "options": [
+                [
+                    "1", "debug"
+                ],
+                [
+                    "2", "info"
+                ],
+                [
+                    "3", "warning"
+                ],
+                [
+                    "4", "error"
+                ]
+            ]
+        }
+    ]
+}
